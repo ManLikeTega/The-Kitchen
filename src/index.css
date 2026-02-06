@@ -1,1 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
+@tailwind utilities;
+
+:root {
+  --color-one: #6406b4;
+  --color-two: #9900ff;
+  --color-three: #3300cc;
+  --color-four: #330099;
+  --color-five: #ff0066;
+  --color-six: #ff0000;
+  --color-seven: #ff6600;
+  --color-eight: #ffcc00;
+}
+
+@theme {
+  --color-background: #efefef;
+  --color-secondary: #6b1316;
+
+  --color-third: #e73700;
+
+  --color-extra: #e9e9e9;
+
+  --color-textColorThick: #333333;
+
+  --font-fontOne: "Urbanist", sans-serif;
+  --font-fontTwo: "Roboto", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-textColorThick font-fontTwo;
+  }
+
+  p {
+    @apply text-sm md:text-lg  leading-relaxed;
+  }
+
+  .navlink_lg {
+    @apply text-lg capitalize relative tracking-wider text-white;
+  }
+
+  .navlink_sm {
+    @apply text-lg text-white capitalize relative tracking-wider mb-3;
+  }
+
+  .btnsa {
+    @apply bg-[linear-gradient(90deg,var(--color-six)_0%,var(--color-seven)_50%,var(--color-three)_100%)]
+  hover:bg-[linear-gradient(90deg,var(--color-three)_0%,var(--color-seven)_50%,var(--color-six)_100%)]
+  text-white px-6 py-2 rounded-full capitalize transition duration-1000 cursor-pointer;
+  }
+
+  .btns {
+    @apply bg-[linear-gradient(90deg,var(--color-six)_0%,var(--color-seven)_50%,var(--color-three)_100%)] 
+  text-white;
+  }
+
+  .btn {
+    @apply bg-(--color-seven) text-white px-6 py-2 rounded-full capitalize transition duration-1000 cursor-pointer;
+  }
+
+  .section {
+    @apply px-5 md:px-20 py-10 md:py-20;
+  }
+}
+
+body {
+  overflow-anchor: none;
+  user-select: none;
+}
+
+.bg-one {
+  background: linear-gradient(
+    90deg,
+    var(--color-six) 0%,
+    var(--color-seven) 50%,
+    var(--color-three) 100%
+  );
+  transition: all 0.5s ease-in-out;
+}
