@@ -62,6 +62,10 @@
   .section {
     @apply px-5 md:px-20 py-10 md:py-20;
   }
+
+  .footer_header {
+    @apply text-lg capitalize font-semibold mb-6 relative pb-2 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-12 before:h-0.5 before:bg-(--color-seven) before:mt-2;
+  }
 }
 
 body {

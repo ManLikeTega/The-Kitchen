@@ -65,3 +65,36 @@ export const showcase_projects = [
     color: "bg-(--color-six)",
   },
 ];
+
+export const quicklinks = [
+  { label: "About", href: "#about" },
+  { label: "Courses", href: "#courses" },
+  { label: "Projects", href: "#projects" },
+  { label: "Enroll Now", href: "#" },
+];
+
+export const contactInfo = [
+  { title: "Phone", text: "+234 813 730 9622", href: "tel:+2348137309622" },
+  {
+    title: "instagram",
+    items: [
+      {
+        label: "Seyi Praiz",
+        href: "https://www.instagram.com/praiz_graphics?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
+      },
+      {
+        label: "anif.uiux",
+        href: "https://www.instagram.com/anif.uiux?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
+      },
+      {
+        label: "Tega.d3v",
+        href: "https://www.instagram.com/tega.d3v?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
+      },
+    ],
+  },
+  {
+    title: "Email",
+    text: "aptechfowobiota@gmail.com",
+    href: "mailto:aptechfowobiota@gmail.com",
+  },
+];

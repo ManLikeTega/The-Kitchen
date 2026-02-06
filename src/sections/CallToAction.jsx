@@ -9,7 +9,7 @@ function CallToAction() {
             Start your creative journey today
           </h2>
 
-          <button className="btn bg-black capitalize">
+          <button className="btn bg-black capitalize animate-bounce">
             <a href="#">Enroll now</a>
           </button>
         </div>
