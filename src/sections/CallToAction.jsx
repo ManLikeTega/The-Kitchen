@@ -1,3 +1,4 @@
+import MotionElement from "../components/MotionElement";
 import { walink } from "../data/data";
 
 function CallToAction() {
@@ -5,17 +6,21 @@ function CallToAction() {
     <>
       <section className="section bg-linear-to-tr from-(--color-three) from-0% via-(--color-seven) via-50% to-(--color-six) to-100%">
         <div className="text-center">
-          <p className="text-white">ARE YOU READY!</p>
+          <MotionElement>
+            <p className="text-white">ARE YOU READY!</p>
+          </MotionElement>
 
-          <h2 className="text-2xl md:text-4xl font-bold text-white max-w-lg mx-auto my-6">
-            Start your creative journey today
-          </h2>
+          <MotionElement delay={0.2}>
+            <h2 className="text-2xl md:text-4xl font-bold text-white max-w-lg mx-auto my-6">
+              Start your creative journey today
+            </h2>
+          </MotionElement>
 
-          <button className="btn bg-black capitalize animate-bounce group/btn">
-            <a href={walink} target="_blank">
+          <a href={walink} target="_blank">
+            <button className="btn bg-black capitalize animate-bounce group/btn">
               Enroll now
-            </a>
-          </button>
+            </button>
+          </a>
         </div>
       </section>
     </>

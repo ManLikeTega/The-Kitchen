@@ -43,9 +43,9 @@ function Hero() {
               </MotionElement>
 
               <MotionElement className="z-20">
-                <button className="btn">
-                  <a href="#courses">View Courses</a>
-                </button>
+                <a href="#courses">
+                  <button className="btn">View Courses</button>
+                </a>
               </MotionElement>
             </div>
           </div>

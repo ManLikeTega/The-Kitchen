@@ -23,9 +23,9 @@ function Navbar() {
             ))}
           </ul>
 
-          <button className="hidden lg:inline-block btn">
-            <a href="#contact">Contact Us</a>
-          </button>
+          <a href="#contact">
+            <button className="hidden lg:inline-block btn">Contact Us</button>
+          </a>
 
           <button
             className="lg:hidden flex flex-col justify-center items-center w-10 h-10"

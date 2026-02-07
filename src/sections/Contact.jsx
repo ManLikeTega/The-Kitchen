@@ -11,6 +11,7 @@ import {
 import { MdOutlineSubject } from "react-icons/md";
 import Badge from "../components/Badge";
 import { publickey, serviceID as sId, templateID as tID } from "../data/data";
+import MotionElement from "../components/MotionElement";
 
 const Contact = () => {
   const formRef = useRef();
@@ -23,7 +24,6 @@ const Contact = () => {
     message: "",
   });
 
-  // EmailJS configuration - Replace with your actual credentials
   const serviceID = sId;
   const templateID = tID;
   const publicKey = publickey;
@@ -126,176 +126,188 @@ const Contact = () => {
             Reach Out
           </Badge>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold mb-6">
-            Get In Touch
-          </h2>
+          <MotionElement delay={0.2}>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold mb-6">
+              Get In Touch
+            </h2>
+          </MotionElement>
 
-          <p className="max-w-2xl mx-auto">
-            Have a question or want to work together? Fill out the form below
-            and we'll get back to you as soon as possible.
-          </p>
+          <MotionElement delay={0.4}>
+            <p className="max-w-2xl mx-auto">
+              Have a question or want to work together? Fill out the form below
+              and we'll get back to you as soon as possible.
+            </p>
+          </MotionElement>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Column - Contact Info */}
-          <div className="lg:col-span-1 space-y-6">
-            {contactInfo.map((item, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
-              >
-                <div className="flex items-start space-x-4">
-                  <div className={`p-3 ${item.icon_bg} rounded-lg`}>
-                    {item.icon}
-                  </div>
+          <MotionElement axis="x" position={-30}>
+            <div className="lg:col-span-1 space-y-6">
+              {contactInfo.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+                >
+                  <div className="flex items-start space-x-4">
+                    <div className={`p-3 ${item.icon_bg} rounded-lg`}>
+                      {item.icon}
+                    </div>
 
-                  <div>
-                    <h3 className="font-semibold text-gray-900 text-lg mb-2">
-                      {item.title}
-                    </h3>
+                    <div>
+                      <h3 className="font-semibold text-gray-900 text-lg mb-2">
+                        {item.title}
+                      </h3>
 
-                    {item.details.map((detail, idx) => (
-                      <p key={idx} className="text-gray-600">
-                        {detail}
-                      </p>
-                    ))}
+                      {item.details.map((detail, idx) => (
+                        <p key={idx} className="text-gray-600">
+                          {detail}
+                        </p>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </MotionElement>
 
           {/* Right Column - Contact Form */}
           <div className="lg:col-span-2">
-            <div className="bg-white p-8 rounded-lg shadow-xl border border-gray-100">
-              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
-                {/* Name and Email */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="relative">
-                    <label className="block text-gray-700 font-medium mb-2">
-                      Full Name *
-                    </label>
-
-                    <div className="relative">
-                      <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-
-                      <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-0 focus:outline-1 focus:outline-(--color-seven) transition-colors"
-                        placeholder="Enter your full name"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className="relative">
-                    <label className="block text-gray-700 font-medium mb-2">
-                      Email Address *
-                    </label>
-
-                    <div className="relative">
-                      <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-
-                      <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-0 focus:outline-1 focus:outline-(--color-seven) transition-colors"
-                        placeholder="john@example.com"
-                        required
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Phone and Subject */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="relative">
-                    <label className="block text-gray-700 font-medium mb-2">
-                      Phone Number
-                    </label>
-
-                    <div className="relative">
-                      <FaPhone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-
-                      <input
-                        type="tel"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-0 focus:outline-1 focus:outline-(--color-seven) transition-colors"
-                        placeholder="080 1234 5678"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="relative">
-                    <label className="block text-gray-700 font-medium mb-2">
-                      Subject
-                    </label>
-
-                    <div className="relative">
-                      <MdOutlineSubject
-                        className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
-                        size={20}
-                      />
-
-                      <input
-                        type="text"
-                        name="subject"
-                        value={formData.subject}
-                        onChange={handleChange}
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-0 focus:outline-1 focus:outline-(--color-seven) transition-colors"
-                        placeholder="How can we help you?"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Message */}
-                <div>
-                  <label className="block text-gray-700 font-medium mb-2">
-                    Your Message *
-                  </label>
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows="6"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-0 focus:outline-1 focus:outline-(--color-seven) transition-colors resize-none"
-                    placeholder="Tell us about your project or inquiry..."
-                    required
-                  />
-                </div>
-
-                {/* Submit Button */}
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-(--color-seven) text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+            <MotionElement axis="x">
+              <div className="bg-white p-8 rounded-lg shadow-xl border border-gray-100">
+                <form
+                  ref={formRef}
+                  onSubmit={handleSubmit}
+                  className="space-y-6"
                 >
-                  {isSubmitting ? (
-                    <>
-                      <FaSpinner className="animate-spin" />
-                      <span>Sending...</span>
-                    </>
-                  ) : (
-                    <>
-                      <FaPaperPlane />
-                      <span>Send Message</span>
-                    </>
-                  )}
-                </button>
+                  {/* Name and Email */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="relative">
+                      <label className="block text-gray-700 font-medium mb-2">
+                        Full Name *
+                      </label>
 
-                <p className="text-gray-500 text-sm text-center mt-4">
-                  * Required fields
-                </p>
-              </form>
-            </div>
+                      <div className="relative">
+                        <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+
+                        <input
+                          type="text"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-0 focus:outline-1 focus:outline-(--color-seven) transition-colors"
+                          placeholder="Enter your full name"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div className="relative">
+                      <label className="block text-gray-700 font-medium mb-2">
+                        Email Address *
+                      </label>
+
+                      <div className="relative">
+                        <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+
+                        <input
+                          type="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-0 focus:outline-1 focus:outline-(--color-seven) transition-colors"
+                          placeholder="john@example.com"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Phone and Subject */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="relative">
+                      <label className="block text-gray-700 font-medium mb-2">
+                        Phone Number
+                      </label>
+
+                      <div className="relative">
+                        <FaPhone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+
+                        <input
+                          type="tel"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-0 focus:outline-1 focus:outline-(--color-seven) transition-colors"
+                          placeholder="080 1234 5678"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="relative">
+                      <label className="block text-gray-700 font-medium mb-2">
+                        Subject
+                      </label>
+
+                      <div className="relative">
+                        <MdOutlineSubject
+                          className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                          size={20}
+                        />
+
+                        <input
+                          type="text"
+                          name="subject"
+                          value={formData.subject}
+                          onChange={handleChange}
+                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-0 focus:outline-1 focus:outline-(--color-seven) transition-colors"
+                          placeholder="How can we help you?"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Message */}
+                  <div>
+                    <label className="block text-gray-700 font-medium mb-2">
+                      Your Message *
+                    </label>
+                    <textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      rows="6"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-0 focus:outline-1 focus:outline-(--color-seven) transition-colors resize-none"
+                      placeholder="Tell us about your project or inquiry..."
+                      required
+                    />
+                  </div>
+
+                  {/* Submit Button */}
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full bg-(--color-seven) text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <FaSpinner className="animate-spin" />
+                        <span>Sending...</span>
+                      </>
+                    ) : (
+                      <>
+                        <FaPaperPlane />
+                        <span>Send Message</span>
+                      </>
+                    )}
+                  </button>
+
+                  <p className="text-gray-500 text-sm text-center mt-4">
+                    * Required fields
+                  </p>
+                </form>
+              </div>
+            </MotionElement>
           </div>
         </div>
       </div>

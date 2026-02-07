@@ -51,12 +51,12 @@ function CourseCard({ course }) {
 
         <div className="mt-4 flex items-center justify-between">
           {/* Enroll Now Button */}
-          <button className="px-6 py-2 bg-(--color-seven) text-white rounded-lg hover:shadow-lg hover:shadow-primary/20 hover:scale-105 active:scale-95 transition-all duration-200 group/btn">
-            <a className="flex items-center gap-2" href={walink}>
+          <a href={walink} target="_blank">
+            <button className="flex items-center gap-2 px-6 py-2 bg-(--color-seven) text-white rounded-lg hover:shadow-lg hover:shadow-primary/20 hover:scale-105 active:scale-95 transition-all duration-200 group/btn">
               Enroll Now
               <FaArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200" />
-            </a>
-          </button>
+            </button>
+          </a>
         </div>
       </div>
     </div>
