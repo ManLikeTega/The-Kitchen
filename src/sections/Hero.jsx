@@ -28,16 +28,24 @@ function Hero() {
 
               <MotionElement className="z-20">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl myfont text-white mb-6">
-                  Master Design, Development & Creative Thinking
+                  Master‎ ‎ Design, Development & Creative ‎ ‎Thinking
                 </h1>
               </MotionElement>
 
               <MotionElement className="z-20">
                 <h5 className="text-lg lg:text-xl text-white mb-6">
                   Master{" "}
-                  <span className="text-(--color-eight)">Graphic Design</span>,
-                  <span className="text-(--color-seven)">UI/UX</span>, and{" "}
-                  <span className="text-(--color-six)">Web-Development</span>{" "}
+                  <span className="font-semibold text-(--color-eight)">
+                    Graphic Design
+                  </span>
+                  ,{" "}
+                  <span className="font-semibold text-(--color-seven)">
+                    UI/UX
+                  </span>
+                  , and{" "}
+                  <span className="font-semibold text-(--color-six)">
+                    Web-Development
+                  </span>{" "}
                   with experienced professionals and hands-on projects
                 </h5>
               </MotionElement>

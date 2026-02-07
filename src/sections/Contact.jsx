@@ -278,7 +278,7 @@ const Contact = () => {
                       onChange={handleChange}
                       rows="6"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-0 focus:outline-1 focus:outline-(--color-seven) transition-colors resize-none"
-                      placeholder="Tell us about your project or inquiry..."
+                      placeholder="Tell us about your inquiry..."
                       required
                     />
                   </div>

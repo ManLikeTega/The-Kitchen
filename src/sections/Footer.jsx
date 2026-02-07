@@ -46,34 +46,17 @@ function Footer() {
             <ul className="space-y-3 text-white">
               {contactInfo.map((contact, index) => (
                 <li key={index} className="">
-                  {contact.title == "instagram" ? (
-                    <>
-                      <p className="capitalize font font-semibold text-lg mb-1">
-                        {contact.title}
-                      </p>
+                  <p className="capitalize font font-semibold text-lg mb-1">
+                    {contact.title}
+                  </p>
 
-                      {contact.items.map((item, idx) => (
-                        <a
-                          key={idx}
-                          href={item.href}
-                          target="_blank"
-                          className="block hover:underline"
-                        >
-                          {item.label}
-                        </a>
-                      ))}
-                    </>
-                  ) : (
-                    <>
-                      <p className="capitalize font font-semibold text-lg mb-1">
-                        {contact.title}
-                      </p>
-
-                      <a href={contact.href} className="hover:underline">
-                        {contact.text}
-                      </a>
-                    </>
-                  )}
+                  <a
+                    href={contact.href}
+                    target="_blank"
+                    className="hover:underline"
+                  >
+                    {contact.text}
+                  </a>
                 </li>
               ))}
             </ul>

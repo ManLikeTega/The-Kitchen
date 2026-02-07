@@ -4,7 +4,7 @@ export const hero_image =
   "https://res.cloudinary.com/df0nmixrv/image/upload/v1770296656/6aa4781daa0b547daa4efd48c497b56f024c11de_chgwfv.png";
 export const about_image =
   "https://res.cloudinary.com/df0nmixrv/image/upload/v1770292510/pan_2_1_lyseuy.png";
-export const walink = "https://wa.link/r4uq22";
+export const walink = "https://wa.link/z3ul1d";
 
 export const publickey = import.meta.env.VITE_EMAILJS_PUBLICKEY_TOKEN;
 export const serviceID = import.meta.env.VITE_EMAILJS_SERVICEID_TOKEN;
@@ -46,6 +46,8 @@ export const courses = [
 
 export const showcase_projects = [
   {
+    ig_link:
+      "https://www.instagram.com/praiz_graphics?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
     image_url:
       "https://res.cloudinary.com/df0nmixrv/image/upload/v1770292972/f6e42d0fbf7b26b0c28c92bb096cc0f5c944a9e0_phnfs6.jpg",
     name: "Seyi Praiz",
@@ -54,6 +56,8 @@ export const showcase_projects = [
     color: "bg-(--color-eight)",
   },
   {
+    ig_link:
+      "https://www.instagram.com/anif.uiux?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
     image_url:
       "https://res.cloudinary.com/df0nmixrv/image/upload/v1770292973/f288be73e1c26f399c1466268b71c99d6b07f3de_ceuus4.png",
     name: "ANIF.UI/UX",
@@ -62,6 +66,8 @@ export const showcase_projects = [
     color: "bg-(--color-seven)",
   },
   {
+    ig_link:
+      "https://www.instagram.com/tega.d3v?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
     image_url:
       "https://res.cloudinary.com/df0nmixrv/image/upload/v1770292974/c6bbf3a88ab592b3be83e36578e22ff65f3d4b42_ookwic.png",
     name: "Tega.d3v",
@@ -82,21 +88,9 @@ export const quicklinks = [
 export const contactInfo = [
   { title: "Phone", text: "+234 915 180 8951", href: "tel:+2349151808951" },
   {
-    title: "instagram",
-    items: [
-      {
-        label: "Seyi Praiz",
-        href: "https://www.instagram.com/praiz_graphics?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
-      },
-      {
-        label: "anif.uiux",
-        href: "https://www.instagram.com/anif.uiux?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
-      },
-      {
-        label: "Tega.d3v",
-        href: "https://www.instagram.com/tega.d3v?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
-      },
-    ],
+    title: "Instagram",
+    text: "@thekitchen_hq",
+    href: "https://www.instagram.com/thekitchen_hq?igsh=MXFwZ2VxZmR3NmZqdQ%3D%3D&utm_source=qr",
   },
   {
     title: "Email",

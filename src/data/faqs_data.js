@@ -2,12 +2,12 @@ export const faqs = [
   {
     question: "What is The Kitchen?",
     answer:
-      "The Kitchen is a hands-on creative and tech cohort designed to train participants in Graphic Design, Web Design, and Web Development. It provides a collaborative environment where ideas are built, refined, and launched through practical learning.",
+      "The Kitchen is a hands-on creative and tech cohort designed to train participants in Graphic Design, Web Design, and Web Development. It provides a collaborative environment where ideas are built, refined, and launched through practical learning",
   },
   {
     question: "When is the deadline for registration?",
     answer:
-      "Registration closes at 11:59pm — February 20th. No extensions will be granted.",
+      "Registration closes at 11:59pm - 1st MARCH 2026. No extensions will be granted.",
   },
   {
     question: "Is the cohort online or physical?",
@@ -36,7 +36,7 @@ export const faqs = [
   },
   {
     question: "What is the cost of the cohort?",
-    answer: "₦100k / $70",
+    answer: "₦100,000k / $70",
   },
   {
     question: "How do I register?",
@@ -56,6 +56,11 @@ export const faqs = [
   {
     question: "How is the schedule structured?",
     answer:
-      "The cohort runs for 3 months and includes live lectures, practical tasks, and guided projects. Session days and times will be shared after registration.",
+      "The cohort runs for 3 months (1 month for each programme) and includes live lectures, practical tasks, and guided projects. Session days and times will be shared after registration.",
+  },
+  {
+    question: "How many participant are in each cohort?",
+    answer:
+      "Each cohort is limited to 20 participants. Spots are filled on a first-come-first-served basis.",
   },
 ];

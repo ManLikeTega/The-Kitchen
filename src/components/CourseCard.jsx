@@ -1,15 +1,6 @@
-import {
-  FaArrowRight,
-  FaCheckCircle,
-  FaBookOpen,
-  FaUserAlt,
-  FaClock,
-} from "react-icons/fa";
-import { walink } from "../data/data";
-
 function CourseCard({ course }) {
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden group border border-gray-200 hover:shadow-2xl hover:border-amber-500 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full text-left">
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full text-left">
       {/* Image container */}
       <div className="relative h-60 overflow-hidden">
         <img
@@ -44,19 +35,6 @@ function CourseCard({ course }) {
               {tool}
             </span>
           ))}
-        </div>
-
-        {/* Separator */}
-        <div className="w-full h-px bg-linear-to-r from-transparent via-gray-300 to-transparent my-1" />
-
-        <div className="mt-4 flex items-center justify-between">
-          {/* Enroll Now Button */}
-          <a href={walink} target="_blank">
-            <button className="flex items-center gap-2 px-6 py-2 bg-(--color-seven) text-white rounded-lg hover:shadow-lg hover:shadow-primary/20 hover:scale-105 active:scale-95 transition-all duration-200 group/btn">
-              Enroll Now
-              <FaArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200" />
-            </button>
-          </a>
         </div>
       </div>
     </div>
