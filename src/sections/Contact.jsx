@@ -79,12 +79,12 @@ const Contact = () => {
     {
       icon: <FaEnvelope className="text-green-500" size={24} />,
       title: "Email Us",
-      details: ["support@example.com", "info@example.com"],
+      details: ["thekitchenclasshq@gmail.com"],
     },
     {
       icon: <FaPhone className="text-purple-500" size={24} />,
       title: "Call Us",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+      details: ["+234 915 180 8951"],
     },
   ];
 
