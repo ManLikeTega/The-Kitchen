@@ -74,7 +74,7 @@ export const quicklinks = [
 ];
 
 export const contactInfo = [
-  { title: "Phone", text: "+234 813 730 9622", href: "tel:+2348137309622" },
+  { title: "Phone", text: "+234 915 180 8951", href: "tel:+2349151808951" },
   {
     title: "instagram",
     items: [
@@ -94,7 +94,7 @@ export const contactInfo = [
   },
   {
     title: "Email",
-    text: "aptechfowobiota@gmail.com",
-    href: "mailto:aptechfowobiota@gmail.com",
+    text: "thekitchenclasshq@gmail.com",
+    href: "mailto:thekitchenclasshq@gmail.com",
   },
 ];

@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import { socialLinks } from "../data/footer_links";
 import { LuChevronRight } from "react-icons/lu";
 import Logo from "../components/Logo";
 import { quicklinks, contactInfo } from "../data/data";
@@ -16,7 +15,7 @@ function Footer() {
           <div className="md:col-span-2">
             <Logo className="w-32 h-16 mb-6" />
 
-            <h3 className="text-lg font-light mb-4">DESIGN. BUILD. LAUNCH</h3>
+            <h3 className="text-sm font-light mb-4">DESIGN. BUILD. LAUNCH</h3>
 
             <p className="mb-6">
               Empowering the next generation of designers and developers through
@@ -85,20 +84,13 @@ function Footer() {
       {/* Bottom Footer */}
       <div className="border-t border-white">
         <div className="max-w-7xl mx-auto px-6 py-8">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="">
             {/* Copyright */}
             <div className="text-center lg:text-left">
               <p className="text-gray-200">
-                © {currentYear} Aptech Fowobi. All Rights Reserved.
+                © {currentYear} the kitchen. All Rights Reserved.
               </p>
             </div>
-
-            {/* Policy Links */}
-            <ul className="flex flex-col sm:flex-row items-center gap-4">
-              <li>Privacy Policy</li>
-              <li>Terms of Service</li>
-              <li>Website Builder</li>
-            </ul>
           </div>
         </div>
       </div>

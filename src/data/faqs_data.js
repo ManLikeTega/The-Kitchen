@@ -1,42 +1,61 @@
 export const faqs = [
   {
-    question: "Why Aptech?",
+    question: "What is The Kitchen?",
     answer:
-      "Aptech is a world pioneer in IT training programs, we offer excellent value and teach up to date I.T skills/modern technology skills. Our courses are designed to meet industry standards and are delivered by experienced professionals.",
+      "The Kitchen is a hands-on creative and tech cohort designed to train participants in Graphic Design, Web Design, and Web Development. It provides a collaborative environment where ideas are built, refined, and launched through practical learning.",
   },
   {
-    question: "Why would I choose Aptech over a conventional university?",
+    question: "When is the deadline for registration?",
     answer:
-      "Aptech offers hands-on practical trainings. faculties are being trained on latest technological advancement in different fields in I.T and you can transfer your credits to our UK or Dubai affiliated universities.",
+      "Registration closes at 11:59pm — [insert date]. No extensions will be granted.",
   },
   {
-    question: "Is Aptech internationally recognised?",
+    question: "Is the cohort online or physical?",
     answer:
-      "Aptech is a leading global I.T educational institute with presence in more than 40 countries. All certificate have global recognition.",
+      "The cohort is 100% virtual, allowing participants to join from anywhere.",
   },
   {
-    question: "What does ADSE stand for?",
+    question: "Will there be live sessions?",
     answer:
-      "ADSE stands for Advanced Diploma in Software Engineering, a comprehensive program covering full-stack development and software engineering principles.",
+      "Yes. There will be live teaching sessions, demonstrations, practical exercises, and interactive Q&A opportunities throughout the program.",
   },
   {
-    question: "How long does the ADSE program last?",
+    question: "Who is this cohort for?",
     answer:
-      "The ADSE program is 24 months long, divided into 4 semesters of intensive hands-on training.",
+      "This cohort is suitable for beginners exploring design or development, creatives looking to sharpen their skills, students interested in tech careers, and anyone passionate about building digital products.",
   },
   {
-    question: "What topics are covered in the ADSE curriculum?",
+    question: "Can I join from outside Nigeria?",
     answer:
-      "The curriculum includes programming fundamentals, web development, mobile app development, database management, cloud computing, and software engineering best practices.",
+      "Yes. The cohort is open to international participants, and payment options will be provided accordingly.",
   },
   {
-    question: "Do I need any prior certification to enroll?",
+    question: "Will session recordings be available?",
     answer:
-      "No prior certification is required. We welcome students from all educational backgrounds who are passionate about technology.",
+      "Details about access to recordings will be shared with registered participants before the cohort begins.",
   },
   {
-    question: "Do I need any prior computer knowledge to enroll?",
+    question: "What is the cost of the cohort?",
+    answer: "[Insert price — Nigeria] / [Insert price — International]",
+  },
+  {
+    question: "How do I register?",
     answer:
-      "If you lack prior computer experience, worry not! Aptech is here to provide comprehensive training, starting from the fundamentals of computer operations. In no time, you'll gain the skills to navigate a computer proficiently.",
+      "Visit [Insert registration link] and follow the instructions provided.",
+  },
+  {
+    question: "Who are the instructors?",
+    answer:
+      "The cohort is facilitated by three instructors specializing in Graphic Design, Web Design, and Web Development. Full profiles will be shared with participants.",
+  },
+  {
+    question: "Will I receive a certificate?",
+    answer:
+      "Yes. Participants who actively engage and complete the cohort requirements will receive a certificate upon successful completion.",
+  },
+  {
+    question: "How is the schedule structured?",
+    answer:
+      "The cohort runs for [insert duration] and includes live lectures, practical tasks, and guided projects. Session days and times will be shared after registration.",
   },
 ];
