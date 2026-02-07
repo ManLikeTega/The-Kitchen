@@ -7,7 +7,7 @@ export const faqs = [
   {
     question: "When is the deadline for registration?",
     answer:
-      "Registration closes at 11:59pm — [insert date]. No extensions will be granted.",
+      "Registration closes at 11:59pm — February 20th. No extensions will be granted.",
   },
   {
     question: "Is the cohort online or physical?",
@@ -36,12 +36,12 @@ export const faqs = [
   },
   {
     question: "What is the cost of the cohort?",
-    answer: "[Insert price — Nigeria] / [Insert price — International]",
+    answer: "₦100k / $70",
   },
   {
     question: "How do I register?",
     answer:
-      "Visit [Insert registration link] and follow the instructions provided.",
+      "Click the 'Enroll Now' button on our website, and complete the payment process to secure your spot in the cohort.",
   },
   {
     question: "Who are the instructors?",
@@ -56,6 +56,6 @@ export const faqs = [
   {
     question: "How is the schedule structured?",
     answer:
-      "The cohort runs for [insert duration] and includes live lectures, practical tasks, and guided projects. Session days and times will be shared after registration.",
+      "The cohort runs for 3 months and includes live lectures, practical tasks, and guided projects. Session days and times will be shared after registration.",
   },
 ];

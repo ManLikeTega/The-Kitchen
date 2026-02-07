@@ -13,10 +13,10 @@ function About() {
               About Us
             </Badge>
 
-            <MotionElement>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl text-left font-bold mb-6">
+            <MotionElement delay={0.2}>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl text-left mb-6 myfont">
                 Empowering the Next Generation of{" "}
-                <span className="text-gradient-to-r from-blue-500 to-purple-600">
+                <span className="bg-linear-to-r bg-clip-text text-transparent from-(--color-three) via-(--color-seven) to-(--color-six)">
                   CREATORS
                 </span>
               </h2>

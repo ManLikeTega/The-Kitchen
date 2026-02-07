@@ -1,3 +1,5 @@
+import { walink } from "../data/data";
+
 function CallToAction() {
   return (
     <>
@@ -9,8 +11,10 @@ function CallToAction() {
             Start your creative journey today
           </h2>
 
-          <button className="btn bg-black capitalize animate-bounce">
-            <a href="#">Enroll now</a>
+          <button className="btn bg-black capitalize animate-bounce group/btn">
+            <a href={walink} target="_blank">
+              Enroll now
+            </a>
           </button>
         </div>
       </section>

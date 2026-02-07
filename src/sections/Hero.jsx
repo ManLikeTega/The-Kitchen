@@ -27,7 +27,7 @@ function Hero() {
               </Badge>
 
               <MotionElement className="z-20">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl myfont text-white mb-6">
                   Master Design, Development & Creative Thinking
                 </h1>
               </MotionElement>

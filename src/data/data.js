@@ -4,12 +4,17 @@ export const hero_image =
   "https://res.cloudinary.com/df0nmixrv/image/upload/v1770296656/6aa4781daa0b547daa4efd48c497b56f024c11de_chgwfv.png";
 export const about_image =
   "https://res.cloudinary.com/df0nmixrv/image/upload/v1770292510/pan_2_1_lyseuy.png";
+export const walink = "https://wa.link/r4uq22";
+
+export const publickey = import.meta.env.VITE_EMAILJS_PUBLICKEY_TOKEN;
+export const serviceID = import.meta.env.VITE_EMAILJS_SERVICEID_TOKEN;
+export const templateID = import.meta.env.VITE_EMAILJS_TEMPLATEID_TOKEN;
 
 export const navlinks = [
-  { label: "Home", href: "#" },
   { label: "About", href: "#about" },
   { label: "Courses", href: "#courses" },
   { label: "Projects", href: "#projects" },
+  { label: "FAQs", href: "#faqs" },
 ];
 
 export const courses = [
@@ -70,6 +75,7 @@ export const quicklinks = [
   { label: "About", href: "#about" },
   { label: "Courses", href: "#courses" },
   { label: "Projects", href: "#projects" },
+  { label: "FAQs", href: "#faqs" },
   { label: "Enroll Now", href: "#" },
 ];
 

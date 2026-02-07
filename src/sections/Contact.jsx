@@ -9,6 +9,8 @@ import {
   FaSpinner,
 } from "react-icons/fa";
 import { MdOutlineSubject } from "react-icons/md";
+import Badge from "../components/Badge";
+import { publickey, serviceID as sId, templateID as tID } from "../data/data";
 
 const Contact = () => {
   const formRef = useRef();
@@ -22,9 +24,9 @@ const Contact = () => {
   });
 
   // EmailJS configuration - Replace with your actual credentials
-  const serviceID = "YOUR_SERVICE_ID";
-  const templateID = "YOUR_TEMPLATE_ID";
-  const publicKey = "YOUR_PUBLIC_KEY";
+  const serviceID = sId;
+  const templateID = tID;
+  const publicKey = publickey;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -77,19 +79,21 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <FaEnvelope className="text-green-500" size={24} />,
+      icon: <FaEnvelope className="text-(--color-three)" size={24} />,
+      icon_bg: "bg-(--color-three)/10",
       title: "Email Us",
       details: ["thekitchenclasshq@gmail.com"],
     },
     {
-      icon: <FaPhone className="text-purple-500" size={24} />,
+      icon: <FaPhone className="text-(--color-six)" size={24} />,
+      icon_bg: "bg-(--color-six)/10",
       title: "Call Us",
       details: ["+234 915 180 8951"],
     },
   ];
 
   return (
-    <section className="py-16 px-4 bg-extra">
+    <section className="py-16 px-4 bg-extra" id="contact">
       <Toaster
         position="top-right"
         toastOptions={{
@@ -118,6 +122,10 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
+          <Badge className={`text-white`} Icon={FaEnvelope}>
+            Reach Out
+          </Badge>
+
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold mb-6">
             Get In Touch
           </h2>
@@ -137,11 +145,15 @@ const Contact = () => {
                 className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
               >
                 <div className="flex items-start space-x-4">
-                  <div className="p-3 bg-gray-50 rounded-lg">{item.icon}</div>
+                  <div className={`p-3 ${item.icon_bg} rounded-lg`}>
+                    {item.icon}
+                  </div>
+
                   <div>
                     <h3 className="font-semibold text-gray-900 text-lg mb-2">
                       {item.title}
                     </h3>
+
                     {item.details.map((detail, idx) => (
                       <p key={idx} className="text-gray-600">
                         {detail}
