@@ -20,9 +20,8 @@ function FAQ() {
           </Badge>
 
           <MotionElement delay={0.2}>
-            <h2 className="section_title">
-              Got Questions?{" "}
-              <span className="text-red-700">We've Got Answers</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold mb-6">
+              Got Questions? We've Got Answers
             </h2>
           </MotionElement>
 
