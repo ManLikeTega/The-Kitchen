@@ -36,7 +36,7 @@ export const faqs = [
   },
   {
     question: "What is the cost of the cohort?",
-    answer: "₦100,000k / $70",
+    answer: "₦100,000 / $70",
   },
   {
     question: "How do I register?",
