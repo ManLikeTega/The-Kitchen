@@ -82,7 +82,7 @@ export const quicklinks = [
   { label: "Courses", href: "#courses" },
   { label: "Projects", href: "#projects" },
   { label: "FAQs", href: "#faqs" },
-  { label: "Enroll Now", href: "#" },
+  { label: "Enroll Now", href: "#calltoact" },
 ];
 
 export const contactInfo = [

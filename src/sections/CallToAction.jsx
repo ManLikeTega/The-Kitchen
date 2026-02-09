@@ -4,7 +4,10 @@ import { walink } from "../data/data";
 function CallToAction() {
   return (
     <>
-      <section className="section bg-linear-to-tr from-(--color-three) from-0% via-(--color-seven) via-50% to-(--color-six) to-100%">
+      <section
+        className="section bg-linear-to-tr from-(--color-three) from-0% via-(--color-seven) via-50% to-(--color-six) to-100%"
+        id="calltoact"
+      >
         <div className="text-center">
           <MotionElement>
             <p className="text-white">ARE YOU READY!</p>
