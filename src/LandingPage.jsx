@@ -15,8 +15,8 @@ function LandingPage() {
       <About />
       <Courses />
       <Showcase />
-      <CallToAction />
       <FAQ />
+      <CallToAction />
       <Contact />
       <Footer />
       <Utilities />
