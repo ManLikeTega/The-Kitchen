@@ -13,7 +13,7 @@ function FAQ() {
 
   return (
     <>
-      <section className={`section`} id="faqs">
+      <section className={`section bg-extra`} id="faqs">
         <div className="text-center mb-10">
           <Badge Icon={HelpCircle} className={`text-white`}>
             Frequently Asked Questions
