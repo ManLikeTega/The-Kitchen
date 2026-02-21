@@ -6,7 +6,7 @@ import { FaRegUser } from "react-icons/fa";
 function About() {
   return (
     <>
-      <section className="section" id="about">
+      <section className="section overflow-hidden" id="about">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8">
           <div className="text-center md:text-left">
             <Badge className={"text-white"} Icon={FaRegUser}>
