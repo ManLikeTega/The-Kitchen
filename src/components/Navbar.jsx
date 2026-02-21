@@ -37,28 +37,25 @@ function Navbar() {
 
         {isMenuOpen && (
           <div className="mt-5 lg:hidden">
-            <ul className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5">
               {navlinks.map((link, index) => (
-                <li key={index} className="navlink_sm">
-                  <a
-                    onClick={() => isMenuOpen && setIsMenuOpen(false)}
-                    href={link.href}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-
-              <li>
                 <a
                   onClick={() => isMenuOpen && setIsMenuOpen(false)}
-                  href="#contact"
-                  className="navlink_sm"
+                  href={link.href}
                 >
-                  Contact Us
+                  <p key={index} className="navlink_sm">
+                    {link.label}
+                  </p>
                 </a>
-              </li>
-            </ul>
+              ))}
+
+              <a
+                onClick={() => isMenuOpen && setIsMenuOpen(false)}
+                href="#contact"
+              >
+                <p className="navlink_sm">Contact Us</p>
+              </a>
+            </div>
           </div>
         )}
       </nav>
