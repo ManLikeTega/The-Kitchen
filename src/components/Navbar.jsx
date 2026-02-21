@@ -37,7 +37,10 @@ function Navbar() {
 
         {isMenuOpen && (
           <div className="mt-5 lg:hidden">
-            <ul className="flex flex-col gap-5">
+            <ul
+              onClick={() => isMenuOpen && setIsMenuOpen(false)}
+              className="flex flex-col gap-5"
+            >
               {navlinks.map((link, index) => (
                 <li key={index} className="navlink_sm">
                   <a href={link.href}>{link.label}</a>
