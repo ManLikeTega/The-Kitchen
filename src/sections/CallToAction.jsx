@@ -5,7 +5,7 @@ function CallToAction() {
   return (
     <>
       <section
-        className="section scroll-mt-[40vh] bg-linear-to-tr from-(--color-three) from-0% via-(--color-seven) via-50% to-(--color-six) to-100%"
+        className="section scroll-mt-[35vh] bg-linear-to-tr from-(--color-three) from-0% via-(--color-seven) via-50% to-(--color-six) to-100%"
         id="calltoact"
       >
         <div className="text-center">

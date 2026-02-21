@@ -93,7 +93,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-extra" id="contact">
+    <section className="py-16 px-4 bg-extra overflow-hidden" id="contact">
       <Toaster
         position="top-right"
         toastOptions={{
