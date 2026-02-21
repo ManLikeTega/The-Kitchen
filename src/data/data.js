@@ -15,6 +15,7 @@ export const navlinks = [
   { label: "Courses", href: "#courses" },
   { label: "Projects", href: "#projects" },
   { label: "FAQs", href: "#faqs" },
+  { label: "Enroll Now", href: "#calltoact" },
 ];
 
 export const courses = [
