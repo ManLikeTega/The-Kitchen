@@ -8,31 +8,47 @@ import FAQ from "./sections/FAQ";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import Showcase from "./sections/Showcase";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 function LandingPage() {
   const [loading, setLoading] = useState(true);
-  const totalImages = useRef(0);
 
   useEffect(() => {
-    // Get all images
     const images = Array.from(document.images);
-    totalImages.current = images.length;
+    const total = images.length;
 
-    if (totalImages.current === 0) {
-      // No images, just wait for fonts
+    let loadedCount = 0;
+
+    const handleLoad = () => {
+      loadedCount++;
+      if (loadedCount === total) {
+        document.fonts.ready.then(() => {
+          setTimeout(() => setLoading(false), 300);
+        });
+      }
+    };
+
+    if (total === 0) {
       document.fonts.ready.then(() => {
-        setTimeout(() => setLoading(false), 500); // Small delay for smooth transition
+        setTimeout(() => setLoading(false), 300);
       });
       return;
     }
 
-    const timeout = setTimeout(() => {
-      setLoading(false);
-    }, 5000);
+    images.forEach((img) => {
+      if (img.complete) {
+        handleLoad();
+      } else {
+        img.addEventListener("load", handleLoad);
+        img.addEventListener("error", handleLoad);
+      }
+    });
 
     return () => {
-      clearTimeout(timeout);
+      images.forEach((img) => {
+        img.removeEventListener("load", handleLoad);
+        img.removeEventListener("error", handleLoad);
+      });
     };
   }, []);
 
